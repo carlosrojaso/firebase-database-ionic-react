@@ -81,7 +81,7 @@ const Home: React.FC = () => {
     handleOpen();
   };
 
-  const removeFromList = (key: number) => {
+  const removeFromList = (key: any) => {
  
     const tmpList = [...itemsArray];
 
@@ -128,7 +128,6 @@ const Home: React.FC = () => {
               <IonText color="primary">
                 <h3>{item.text}</h3>
               </IonText>
-              <p>{item.description}</p>
               </IonLabel>
             </IonItem>
             <IonItemOptions side="end">
